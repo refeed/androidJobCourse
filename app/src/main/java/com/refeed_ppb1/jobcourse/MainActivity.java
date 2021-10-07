@@ -2,6 +2,7 @@ package com.refeed_ppb1.jobcourse;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.animation.Animation;
@@ -31,7 +32,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 // Merubah activity
+                Intent goGetStartedActivity = new Intent(MainActivity.this, GetStartedActivity.class);
+                startActivity(goGetStartedActivity);
+                finish();
             }
-        }, 1000L);
+        }, 2000);
     }
 }
