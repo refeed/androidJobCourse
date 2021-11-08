@@ -1,5 +1,6 @@
 package com.refeed_ppb1.jobcourse;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -15,5 +16,15 @@ public class GetStartedActivity extends AppCompatActivity {
 
         btn_signin = findViewById(R.id.btn_signin);
         btn_signup = findViewById(R.id.btn_signup);
+
+        btn_signin.setOnClickListener((l) -> {
+            Intent goToSignIn = new Intent(GetStartedActivity.this, SignInActivity.class);
+            startActivity(goToSignIn);
+        });
+
+        btn_signup.setOnClickListener((l) -> {
+            Intent goToRegisterOne = new Intent(GetStartedActivity.this, RegisterOneActivity.class);
+            startActivity(goToRegisterOne);
+        });
     }
 }

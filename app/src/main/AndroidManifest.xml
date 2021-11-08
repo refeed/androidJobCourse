@@ -18,9 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GetStartedActivity">
-
-        </activity>
+        <activity android:name=".GetStartedActivity"></activity>
+        <activity android:name=".RegisterOneActivity"></activity>
+        <activity android:name=".RegisterTwoActivity"></activity>
+        <activity android:name=".SignInActivity"></activity>
+        <activity android:name=".SuccessRegisterActivity"></activity>
     </application>
 
 </manifest>
